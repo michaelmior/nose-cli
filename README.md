@@ -1,3 +1,10 @@
+# NoSQL Schema Evaluator (NoSE) CLI
+
+[![Build Status](https://travis-ci.org/michaelmior/nose-cli.svg?branch=master)](https://travis-ci.org/michaelmior/nose-cli)
+[![Dependency Status](https://gemnasium.com/michaelmior/nose-cli.svg)](https://gemnasium.com/michaelmior/nose-cli)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/michaelmior/nose-cli/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/michaelmior/nose-cli/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/michaelmior/nose-cli/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/michaelmior/nose-cli/?branch=master)
+
 ## Installation
 
 ### Requirements
