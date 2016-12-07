@@ -1,6 +1,6 @@
 GIT
-  remote: /home/mmior/apps/nose/
-  revision: 754e63e3e0e67d35d635d275ea6e1943f909653a
+  remote: git@github.com:michaelmior/NoSE.git
+  revision: f407c09fb1624c548bb52268c7c6bedadab972f7
   branch: no-cli
   specs:
     nose (0.1.0pre)
@@ -18,7 +18,7 @@ GIT
       pry
       rake
       rbtree
-      representable
+      representable (= 3.0.0)
       ruby-graphviz
       ruby-mysql
       sequel
@@ -115,7 +115,7 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (2.0.4)
-    rake (11.3.0)
+    rake (12.0.0)
     rbtree (0.4.2)
     representable (3.0.0)
       declarative (~> 0.0.5)
@@ -151,7 +151,7 @@ GEM
     smarter_csv (1.1.1)
     table_print (1.5.6)
     thor (0.19.4)
-    uber (0.1.0)
+    uber (0.0.15)
     yard (0.9.5)
     yard-thor (0.0.1)
       thor

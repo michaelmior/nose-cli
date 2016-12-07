@@ -7,7 +7,7 @@ gem 'descriptive_statistics', require: false
 gem 'formatador'
 gem 'gruff'
 gem 'logging'
-gem 'nose', :git => '/home/mmior/apps/nose/', branch: 'no-cli'
+gem 'nose', :git => 'git@github.com:michaelmior/NoSE.git', branch: 'no-cli'
 gem 'parallel'
 gem 'representable'
 gem 'table_print'
