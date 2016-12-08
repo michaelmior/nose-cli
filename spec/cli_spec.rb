@@ -28,8 +28,9 @@ module NoSE
             output = JSON.parse last_command_stopped.stdout
           end.to_not raise_error
 
-          filename = File.read(Gem.datadir('nose') + '/nose-schema.json')
-          schema = JSON.parse filename
+          filename = File.join Gem.loaded_specs['nose'].full_gem_path,
+                               'data', 'nose', 'nose-schema.json'
+          schema = JSON.parse File.read(filename)
           expect(JSON::Validator.validate(schema, output)).to be true
         end
 
