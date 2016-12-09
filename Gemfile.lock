@@ -1,7 +1,6 @@
 GIT
-  remote: git@github.com:michaelmior/NoSE.git
-  revision: f407c09fb1624c548bb52268c7c6bedadab972f7
-  branch: no-cli
+  remote: https://github.com/michaelmior/NoSE.git
+  revision: 64907aa20cf038492cac7a9c3d82015312c5bda7
   specs:
     nose (0.1.0pre)
       cassandra-driver
@@ -192,4 +191,4 @@ DEPENDENCIES
   yard-thor
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
