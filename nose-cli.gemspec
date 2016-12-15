@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'json-schema', '~> 2.7.0', '>= 2.7.0'
   s.add_development_dependency 'pry-rescue', '~> 1.4.4', '>= 1.4.0'
   s.add_development_dependency 'rspec', '~> 3.5.0', '>= 3.5.0'
+  s.add_development_dependency 'rspec-core', '~> 3.5.4', '>= 3.5.0'
   s.add_development_dependency 'rspec-collection_matchers', '~> 1.1.2', '>= 1.1.0'
   s.add_development_dependency 'scrutinizer-ocular', '~> 1.0.1', '>= 1.0.0'
   s.add_development_dependency 'simplecov', '~> 0.12.0'

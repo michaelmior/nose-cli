@@ -159,6 +159,7 @@ DEPENDENCIES
   pry-rescue (~> 1.4.4, >= 1.4.0)
   rspec (~> 3.5.0, >= 3.5.0)
   rspec-collection_matchers (~> 1.1.2, >= 1.1.0)
+  rspec-core (~> 3.5.4, >= 3.5.0)
   scrutinizer-ocular (~> 1.0.1, >= 1.0.0)
   simplecov (~> 0.12.0)
 
