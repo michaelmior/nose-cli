@@ -11,7 +11,7 @@ module NoSE
   module CLI
     class NoSECLI
       TEST_CONFIG_FILE_NAME = File.join File.dirname(__FILE__), '..', '..',
-                                        'nose.yml.example'
+                                        'data', 'nose-cli', 'nose.yml.example'
 
       def initialize(*args)
         suppress_warnings do

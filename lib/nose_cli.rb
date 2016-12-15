@@ -63,7 +63,9 @@ module NoSE
         if interactive
           no_create = no? 'nose.yml is missing, ' \
                           'create from nose.yml.example? [Yn]'
-          FileUtils.cp 'nose.yml.example', CONFIG_FILE_NAME unless no_create
+          example_cfg = File.join Gem.loaded_specs['nose-cli'].full_gem_path,
+                                  'data', 'nose-cli', 'nose.yml.example'
+          FileUtils.cp example_cfg, CONFIG_FILE_NAME unless no_create
         else
           @logger.warn 'Configuration file missing'
         end

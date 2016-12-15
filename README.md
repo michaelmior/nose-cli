@@ -42,7 +42,7 @@ Tests are written using [RSpec](http://rspec.info/) and can be executed with `bu
 If you do not have a copy of the Cbc solver available, you can exclude tests depending on it with `--tag ~solver`.
 
 Some commands require a configuration file in lieu of command line options.
-An example configuration file for the different components of NoSE is given in [nose.yml.example](nose.yml.example).
+An example configuration file for the different components of NoSE is given in [nose.yml.example](data/nose-cli/nose.yml.example).
 Unfortunately, the line between what is configured in the configuration file and command line flags is currently somewhat blurry.
 
 ## Acknowledgements
