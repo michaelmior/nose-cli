@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'aruba', '~> 0.14.2'
   s.add_development_dependency 'binding_of_caller', '~> 0.7.2'
-  s.add_development_dependency 'fakefs', '~> 0.10.0'
+  s.add_development_dependency 'fakefs', '~> 0.10.1'
   s.add_development_dependency 'json-schema', '~> 2.7.0', '>= 2.7.0'
   s.add_development_dependency 'pry-rescue', '~> 1.4.4', '>= 1.4.0'
   s.add_development_dependency 'rspec', '~> 3.5.0', '>= 3.5.0'
