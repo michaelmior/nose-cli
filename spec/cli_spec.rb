@@ -23,15 +23,7 @@ module NoSE
         it 'can search with no limits', solver: true do
           run_simple 'nose search ebay --format=json'
 
-          output = nil
-          expect do
-            output = JSON.parse last_command_stopped.stdout
-          end.to_not raise_error
-
-          filename = File.join Gem.loaded_specs['nose'].full_gem_path,
-                               'data', 'nose', 'nose-schema.json'
-          schema = JSON.parse File.read(filename)
-          expect(JSON::Validator.validate(schema, output)).to be true
+          expect(NoSE::Serialize.validate_json last_command_stopped.output).to be true
         end
 
         it 'can search with a limit', solver: true do
