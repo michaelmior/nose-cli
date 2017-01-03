@@ -26,6 +26,10 @@ module NoSE
         'nose'
       end
 
+      def self.exit_on_failure?
+        true
+      end
+
       # Override to allow mocking of produced classes
       no_commands do
         def get_backend(*_args)

@@ -82,7 +82,7 @@ module NoSE
       end
 
       # Get a backend instance for a given configuration and dataset
-      # @return [Backend::BackendBase]
+      # @return [Backend::Backend]
       def get_backend(config, result)
         be_class = get_class 'backend', config
         be_class.new result.workload.model, result.indexes,
@@ -340,6 +340,7 @@ require_relative 'nose_cli/diff_plans'
 require_relative 'nose_cli/dump'
 require_relative 'nose_cli/export'
 require_relative 'nose_cli/execute'
+require_relative 'nose_cli/list'
 require_relative 'nose_cli/load'
 require_relative 'nose_cli/genworkload'
 require_relative 'nose_cli/graph'

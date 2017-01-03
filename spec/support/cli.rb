@@ -3,7 +3,7 @@ module NoSE
     RSpec.shared_context 'CLI setup' do
       include_context 'dummy cost model'
 
-      let(:backend) { instance_double(Backend::BackendBase) }
+      let(:backend) { instance_double(Backend::Backend) }
       let(:loader) { instance_double(Loader::LoaderBase) }
 
       before(:each) do
