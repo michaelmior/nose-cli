@@ -36,8 +36,15 @@ module NoSE
                            aliases: '-i'
 
       def search(name)
-        # Get the workload and cost model
-        workload = Workload.load name
+        # Get the workload from file or name
+        if File.exist? name
+          result = load_results name, options[:mix]
+          workload = result.workload
+        else
+          workload = Workload.load name
+        end
+
+        # Prepare the workload and the cost model
         workload.mix = options[:mix].to_sym \
           unless options[:mix] == 'default' && workload.mix != :default
         workload.remove_updates if options[:read_only]
