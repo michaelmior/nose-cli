@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'ansi-to-html', '~> 0.0.3'
   s.add_dependency 'descriptive_statistics', '~> 2.5.1', '>= 2.5.0'
   s.add_dependency 'gruff', '~> 0.7.0'
-  s.add_dependency 'nose', '0.1.0pre5'
+  s.add_dependency 'nose', '~> 0.1.0'
   s.add_dependency 'representable', '= 3.0.0'
   s.add_dependency 'table_print', '~> 1.5.6', '>= 1.5.0'
   s.add_dependency 'thor', '~> 0.19.4'
