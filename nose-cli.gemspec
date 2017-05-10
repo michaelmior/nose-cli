@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'nose-cli'
-  s.version     = '0.1.0pre'
+  s.version     = '0.1.0'
   s.license     = 'GPL-3.0'
   s.summary     = 'Schema design for NoSQL applications'
   s.author      = 'Michael Mior'
