@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nose-cli (0.1.1)
+    nose-cli (0.1.2)
       ansi-to-html (~> 0.0.3)
       descriptive_statistics (~> 2.5.1, >= 2.5.0)
       gruff (~> 0.7.0)
