@@ -262,7 +262,7 @@ module NoSE
 
         enumerated &&= result.enumerated_indexes
         tmpl = File.read File.join(File.dirname(__FILE__),
-                                   '../../templates/report.erb')
+                                   '../templates/report.erb')
         ns = OpenStruct.new svg: svg,
                             backend: backend,
                             indexes: result.indexes,
