@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    nose-cli (0.1.0)
+    nose-cli (0.1.1)
       ansi-to-html (~> 0.0.3)
       descriptive_statistics (~> 2.5.1, >= 2.5.0)
       gruff (~> 0.7.0)
-      nose (~> 0.1.0)
+      nose (~> 0.1.1)
       representable (= 3.0.0)
       table_print (~> 1.5.6, >= 1.5.0)
       thor (~> 0.19.4)
@@ -75,7 +75,7 @@ GEM
     multi_json (1.12.1)
     multi_test (0.1.2)
     mysql2 (0.4.6)
-    nose (0.1.0)
+    nose (0.1.1)
       cassandra-driver (~> 3.1.0, >= 3.1.0)
       faker (~> 1.7.3, >= 1.7.0)
       formatador (~> 0.2.5)
