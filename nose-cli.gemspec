@@ -23,12 +23,12 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'aruba', '~> 0.14.2'
   s.add_development_dependency 'binding_of_caller', '~> 0.7.2'
-  s.add_development_dependency 'fakefs', '~> 0.10.1'
+  s.add_development_dependency 'fakefs', '~> 0.11.0'
   s.add_development_dependency 'pry-nav'
-  s.add_development_dependency 'pry-rescue', '~> 1.4.4', '>= 1.4.0'
-  s.add_development_dependency 'rspec', '~> 3.5.0', '>= 3.5.0'
-  s.add_development_dependency 'rspec-core', '~> 3.5.4', '>= 3.5.0'
-  s.add_development_dependency 'rspec-collection_matchers', '~> 1.1.2', '>= 1.1.0'
+  s.add_development_dependency 'pry-rescue'
+  s.add_development_dependency 'rspec', '~> 3.6.0', '>= 3.5.0'
+  s.add_development_dependency 'rspec-core', '~> 3.6.0', '>= 3.6.0'
+  s.add_development_dependency 'rspec-collection_matchers', '~> 1.1.3', '>= 1.1.0'
   s.add_development_dependency 'scrutinizer-ocular', '~> 1.0.1', '>= 1.0.0'
-  s.add_development_dependency 'simplecov', '~> 0.12.0'
+  s.add_development_dependency 'simplecov', '~> 0.14.1'
 end
