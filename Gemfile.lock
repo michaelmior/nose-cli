@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nose-cli (0.1.2)
+    nose-cli (0.1.4)
       ansi-to-html (~> 0.0.3)
       descriptive_statistics (~> 2.5.1, >= 2.5.0)
       gruff (~> 0.7.0)
@@ -13,8 +13,8 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     ansi-to-html (0.0.3)
     aruba (0.14.2)
       childprocess (~> 0.5.6)
@@ -57,7 +57,7 @@ GEM
     gherkin (4.0.0)
     gruff (0.7.0)
       rmagick (~> 2.13, >= 2.13.4)
-    i18n (0.8.1)
+    i18n (0.8.6)
     interception (0.5)
     ione (1.2.4)
     json (2.1.0)
@@ -164,4 +164,4 @@ DEPENDENCIES
   simplecov (~> 0.14.1)
 
 BUNDLED WITH
-   1.13.6
+   1.15.3
