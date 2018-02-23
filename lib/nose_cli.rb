@@ -126,8 +126,15 @@ module NoSE
       def load_results(plan_file, mix = 'default')
         representer = Serialize::SearchResultRepresenter.represent \
           Search::Results.new
-        json = File.read(plan_file)
-        result = representer.from_json(json)
+        file = File.read(plan_file)
+
+        case File.extname(plan_file)
+        when '.json'
+          result = representer.from_json(file)
+        when '.rb'
+          result = binding.eval file, filename
+        end
+
         result.workload.mix = mix.to_sym unless \
           mix.nil? || (mix == 'default' && result.workload.mix != :default)
 
