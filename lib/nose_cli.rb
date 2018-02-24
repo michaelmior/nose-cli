@@ -132,7 +132,9 @@ module NoSE
         when '.json'
           result = representer.from_json(file)
         when '.rb'
-          result = binding.eval file, filename
+          result = Search::Results.new
+          workload = binding.eval file, plan_file
+          result.instance_variable_set :@workload, workload
         end
 
         result.workload.mix = mix.to_sym unless \
