@@ -11,8 +11,8 @@ before_install:
   - sudo apt-get install -y coinor-libcbc-dev coinor-libcbc3 coinor-libcoinutils-dev coinor-libcoinutils3v5 coinor-libosi-dev coinor-libosi1 coinor-libclp-dev coinor-libclp1 coinor-libcgl-dev coinor-libcgl1 libstdc++6
   - gem install bundler
 rvm:
-  - 2.4.0
-  - 2.3.3
+  - 2.7.1
+  - 2.6.6
   # Temporarily disabled until we get this working since it slows down tests
   # - jruby-9.0.5.0
 matrix:
