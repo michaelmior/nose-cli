@@ -23,7 +23,7 @@ module NoSE
         it 'can search with no limits', solver: true do
           run_simple 'nose search ebay --format=json'
 
-          expect(NoSE::Serialize.validate_json last_command_stopped.output).to be true
+          expect(NoSE::Serialize.validate_json last_command_stopped.stdout).to be true
         end
 
         it 'can search with a limit', solver: true do

@@ -6,12 +6,12 @@ module NoSE
       context 'when running the list command' do
         it 'can list cost models' do
           run_simple 'nose list cost'
-          expect(last_command_stopped.output).to include "dummy\n"
+          expect(last_command_stopped.stdout).to include "dummy\n"
         end
 
         it 'can list backends' do
           run_simple 'nose list backend'
-          expect(last_command_stopped.output).to include "file\n"
+          expect(last_command_stopped.stdout).to include "file\n"
         end
 
         it 'fails on an invalid type' do

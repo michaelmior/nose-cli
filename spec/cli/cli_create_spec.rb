@@ -7,7 +7,7 @@ module NoSE
         it 'outputs the produced DDL' do
           expect(backend).to receive(:indexes_ddl).and_return(%w(foo bar))
           run_simple 'nose create ebay'
-          expect(last_command_stopped.output).to eq "foo\nbar\n"
+          expect(last_command_stopped.stdout).to eq "foo\nbar\n"
         end
 
         it 'does not try to create on a dry run' do
