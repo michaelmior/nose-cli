@@ -119,7 +119,6 @@ RSpec.configure do |config|
   config.include Aruba::Api
 
   config.before(:each) do
-    restore_env
     setup_aruba
   end
 end
