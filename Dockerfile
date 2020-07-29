@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Michael Mior <mmior@uwaterloo.ca>
 
 LABEL org.label-schema.url="https://michael.mior.ca/projects/NoSE/" \
@@ -19,10 +19,10 @@ RUN apt-get update -qq && \
       libmagickwand-dev \
       libmysqlclient-dev \
       libpq-dev \
-      ruby2.3 \
-      ruby2.3-dev \
+      ruby2.5 \
+      ruby2.5-dev \
     && apt-get clean
-RUN gem2.3 install bundler
+RUN gem2.5 install bundler
 
 ADD . /nose
 WORKDIR /nose
