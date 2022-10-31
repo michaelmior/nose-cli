@@ -44,6 +44,14 @@ Some commands require a configuration file in lieu of command line options.
 An example configuration file for the different components of NoSE is given in [nose.yml.example](data/nose-cli/nose.yml.example).
 Unfortunately, the line between what is configured in the configuration file and command line flags is currently somewhat blurry.
 
+## Defining your own workload
+
+To define a workload and model named `foo`, start by creating `foo_model.rb` and `foo_workload.rb`.
+You can use any of the [models](https://github.com/michaelmior/NoSE/tree/main/models) and [workloads](https://github.com/michaelmior/NoSE/tree/main/workloads) from the main NoSE repository as a template.
+In the `Model` directive in your workload file (e.g. `foo_workload.rb`), specify the path to your model file, such as `Model './foo_model.rb'`.
+Then when running NoSE, use `bundle exec nose search ./foo_workload.rb` where `./foo_workload.rb` is the path to your workload file.
+These paths can either be absolute paths or relative to the current working directory.
+
 ## Acknowledgements
 
 This work was supported by the Natural Sciences and Engineering Research Council of Canada ([NSERC](http://nserc.gc.ca)).
