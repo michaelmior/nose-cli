@@ -1,0 +1,36 @@
+
+name: CI
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.1.4', '3.2.3', '3.3.0']
+    steps:
+    - name: Install required packages
+      run: sudo apt update && sudo apt-get install coinor-cbc coinor-libcbc-dev graphviz
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+    - name: Populate MySQL
+      run: mysql -h 127.0.0.1 -uroot -Dnose < spec/support/data/mysql.sql
+    - name: Test
+      run: |
+        sed -i '/^--tag/d' .rspec
+        bundle exec rspec
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        fail_ci_if_error: true
+        token: ${{ secrets.CODECOV_TOKEN }}
