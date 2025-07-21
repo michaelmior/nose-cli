@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'nose', '~> 0.1.4'
   s.add_dependency 'representable', '= 3.0.0'
   s.add_dependency 'table_print', '~> 1.5.6', '>= 1.5.0'
-  s.add_dependency 'thor', '~> 0.19.4'
+  s.add_dependency 'thor', '~> 1.4.0'
 
   s.add_development_dependency 'aruba', '~> 0.14.2'
   s.add_development_dependency 'binding_of_caller', '~> 0.7.2'
